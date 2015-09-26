@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+  </head>
+  <body ng-app="starter">
+
+    <ion-pane>
+      <ion-header-bar class="bar-stable">
+        <h1 class="title">Ionic Blank Starter</h1>
+      </ion-header-bar>
+      <ion-content class="padding">
+          <div class="list">
+              <label class="item item-input">
+                  <span class="input-label">Username</span>
+                  <input type="text">
+              </label>
+              <label class="item item-input">
+                  <span class="input-label">Password</span>
+                  <input type="password">
+              </label>
+          </div>
+
+          <div class="list list-inset">
+              <label class="item item-input">
+                  <i class="icon ion-search placeholder-icon"></i>
+                  <input type="text" placeholder="Search...">
+              </label>
+          </div>
+
+          <div class="list">
+              <label class="item item-input">
+                  <textarea placeholder="This is a &lt;textarea&gt;&lt;/textarea&gt;"></textarea>
+              </label>
+              <label class="item item-input item-select">
+                  <div class="input-label">
+                      Gender
+                  </div>
+                  <select>
+                      <option>Male</option>
+                      <option>Female</option>
+                  </select>
+              </label>
+          </div>
+
+            <ul class="list">
+              <li class="item item-checkbox">
+                  <label class="checkbox checkbox-assertive">
+                      <input type="checkbox">
+                  </label>
+                  Apples
+              </li>
+              <li class="item item-checkbox">
+                  <label class="checkbox">
+                      <input type="checkbox">
+                  </label>
+                  Oranges
+              </li>
+              <li class="item item-checkbox checkbox-energized">
+                  <label class="checkbox">
+                      <input type="checkbox">
+                  </label>
+                  Lemons
+              </li>
+            </ul>
+
+            <ul class="list">
+                <li class="item item-toggle">
+                      Wifi
+                    <label class="toggle toggle-assertive">
+                          <input type="checkbox">
+                            <div class="track">
+                                <div class="handle"></div>
+                            </div>
+                    </label>
+                </li>
+                <li class="item item-toggle">
+                    Bluetooth
+                  <label class="toggle toggle-positive">
+                        <input type="checkbox">
+                          <div class="track">
+                              <div class="handle"></div>
+                          </div>
+                  </label>
+                </li>
+                <li class="item item-toggle">
+                  Airplane Mode
+                    <label class="toggle toggle-calm">
+                          <input type="checkbox">
+                            <div class="track">
+                                <div class="handle"></div>
+                            </div>
+                    </label>
+                </li>
+            </ul>
+
+            <div class="list">
+                <div class="item range range-positive">
+                    <i class="icon ion-ios-sunny-outline"></i>
+                    <input type="range" name="volume" min="0" max="100" value="33">
+                    <i class="icon ion-ios-sunny"></i>
+                </div>
+            </div>
+
+      </ion-content>
+    </ion-pane>
+  </body>
+</html>
