@@ -33,8 +33,10 @@ angular.module('starter', ['ionic'])
     $urlRouterProvider.otherwise('/login');
 })
 
-.controller('LoginCtrl', function($scope) {
-
+.controller('LoginCtrl', function($scope, $state) {
+    $scope.validate = function() {
+        $state.go('app');
+    }
 })
 
 .controller('AppCtrl', function($scope) {

@@ -8,7 +8,7 @@
           <input type="password" ng-model="password" ng-minlength="3">
         </label>
         <div class="padding">
-          <button ui-sref="app" ng-disabled="!email || !password"
+          <button ng-click="validate()" ng-disabled="!email || !password"
                 class="button button-block button-positive">Sign In</button>
         </div>
 </div>
